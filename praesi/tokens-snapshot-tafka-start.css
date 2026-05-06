@@ -1,0 +1,113 @@
+/* =============================================================
+   TAFKA Praesi — START-State Tokens (tafka.de-Look)
+   =============================================================
+   Quelle:      Live-tafka.de (Hero-Screenshot 2026-04-24)
+                — hellblauer Gradient, weisse Pill-Card-Header,
+                Royal-Blue-Buttons, Poppins Black Headlines,
+                runde Ecken (14-16px Radius, Pills).
+   Zweck:       Start-Zustand fuer den Scroll-Morph in der
+                internen Designsystem-Praesi (Nils).
+                Abschnitte 0-3 rendern mit diesen Tokens.
+                Ab Morph-Stage (Ende Abschnitt 3) morphen die
+                Variablen zu den Ziel-Werten (siehe
+                tokens-snapshot-2026-04-24.css).
+   Wichtig:     Die Variablen-Namen sind mit dem End-State-
+                Snapshot synchron — nur die Werte unterscheiden
+                sich. Das erlaubt CSS-Variable-Interpolation
+                via GSAP im Morph.
+   ============================================================= */
+
+:root {
+  /* === BACKGROUND & SURFACES =================================
+     Hellblauer Gradient als Praesi-Grundton. Weisse Cards
+     mit weichen diffusen Shadows (kein Offset-Shadow). */
+  --paper-1: #EEF4FF;   /* oberer Gradient-Stop */
+  --paper-2: #F7FAFF;   /* unterer Gradient-Stop */
+  --surface:   #FFFFFF; /* Standard-Card-Grund (weiss) */
+  --surface-2: #F5F8FF; /* hellere Card / Hover */
+
+  --ink:   #0B1220;     /* Haupt-Text, fast schwarz mit Blau-Ton */
+  --ink-2: #1E293B;     /* Fliesstext */
+  --ink-3: #475569;     /* Muted / Labels */
+  --ink-4: #94A3B8;     /* dezent */
+  --ink-5: #CBD5E1;     /* Hairlines */
+
+  /* === SIGNAL & ACCENT =======================================
+     tafka.de-Royal-Blue als Primary-Action. Rot und Gruen
+     bleiben semantisch, aber selten. */
+  --txl-yellow:      #2451F5;  /* Primary-Action in Start-State = tafka-Blau (aliased) */
+  --txl-yellow-2:    #4A7FD4;  /* Hover / Lighter Primary */
+  --txl-yellow-deep: #1A3DC4;  /* Pressed / Deeper Primary */
+
+  --signal-red:   #E11D48;
+  --signal-blue:  #2451F5;     /* kanonisches tafka-Blau */
+  --signal-green: #10B981;
+  --warn-amber:   #F59E0B;
+
+  /* === GEOMETRY (PILL & SOFT) ================================
+     Rule 1px — dezente Trennlinien.
+     Radius gross (14-28px) — Pill-Card-Aesthetik.
+     Slot-System 8/16/24 — Tailwind-Spacing-Baseline. */
+  --rule:  1px;
+  --slot:  8px;
+  --slot-2: 16px;
+  --slot-3: 24px;
+  --slot-half: 4px;
+
+  --radius-soft: 16px;  /* Cards, Buttons */
+  --radius-sm:   9999px;  /* Pills, Labels */
+
+  /* === TYPOGRAFIE ============================================
+     Poppins Black fuer Headlines. Mulish als Body-Alternative
+     oder Poppins Regular. Keine Mono in Start-State
+     (tafka.de hat keinen Mono-Akzent sichtbar). */
+  --font-display: 'Poppins', 'Mulish', system-ui, sans-serif;
+  --font-body:    'Poppins', 'Mulish', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+
+  --font-feat: normal;
+
+  /* Text-Skala (clamp-frei hier) */
+  --fs-h1-min: 2.6rem;    --fs-h1-max: 4.8rem;   /* Cover */
+  --fs-h2-min: 1.75rem;   --fs-h2-max: 2.5rem;   /* Abschnitt */
+  --fs-h3: 1.15rem;                               /* Subhead */
+  --fs-body: 1.0625rem;                           /* Fliesstext */
+  --fs-lead: 1.15rem;                             /* Lead */
+  --fs-mono: 11px;                                /* Rails/Labels */
+  --fs-mono-sm: 9px;                              /* Micro-Mono */
+
+  --lh-display: 1.05;     /* Poppins Black, eher locker */
+  --lh-h2:      1.15;
+  --lh-body:    1.65;
+  --lh-lead:    1.55;
+
+  --track-display: -0.025em;
+  --track-h2:      -0.015em;
+  --track-mono:     0.12em;
+  --track-mono-lg:  0.14em;
+
+  /* === SHADOWS ===============================================
+     tafka.de-Look: weiche diffuse Shadows unter Cards und
+     Header. Kein brutaler Offset. */
+  --elev-offset: 0 18px 36px rgba(36, 81, 245, 0.08);
+  --elev-offset-ink: 0 10px 30px rgba(11, 18, 32, 0.06);
+  --elev-side: 0 8px 24px rgba(11, 18, 32, 0.04);
+
+  /* === SEMANTIC ALIASES ====================================== */
+  --color-bg:          var(--paper-1);
+  --color-bg-surface:  var(--surface);
+  --color-text:        var(--ink);
+  --color-text-secondary: var(--ink-3);
+  --color-border:      var(--ink-5);
+  --color-border-subtle: rgba(11,18,32,0.06);
+
+  --color-primary:     var(--signal-blue);
+  --color-secondary:   var(--txl-yellow-2);
+  --color-accent:      var(--signal-red);
+
+  /* === LAYOUT ================================================ */
+  --page-gutter:    clamp(20px, 5vw, 64px);
+  --max-stage:      1200px;
+  --max-cover:      1120px;
+  --max-quote:      880px;
+}

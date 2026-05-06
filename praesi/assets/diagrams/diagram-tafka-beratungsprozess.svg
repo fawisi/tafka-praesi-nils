@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <filter id="sd" x="-5%" y="-5%" width="115%" height="115%"><feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#1C1B1A"/></filter>
+    <marker id="ar" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse"><polygon points="0 0,10 3.5,0 7" fill="#1C1B1A"/></marker>
+  </defs>
+
+  <rect width="1200" height="500" fill="#FAF6F1"/>
+
+  <!-- Title -->
+  <rect x="48" y="36" width="170" height="24" fill="#00369E"/>
+  <text x="133" y="52" font-family="IBM Plex Mono,monospace" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">ZUSAMMENARBEIT</text>
+  <text x="48" y="92" font-family="Montserrat,sans-serif" font-size="32" font-weight="900" fill="#1C1B1A" letter-spacing="-0.8">Der TAFKA Beratungsprozess</text>
+  <text x="48" y="116" font-family="Poppins,sans-serif" font-size="15" fill="#5D5C5B">Von der Analyse zum messbaren Ergebnis — in vier Schritten</text>
+  <line x1="48" y1="136" x2="1152" y2="136" stroke="#1C1B1A" stroke-width="2"/>
+
+  <!-- Step 1: ANALYSE -->
+  <rect x="48" y="172" width="236" height="230" fill="#00369E" stroke="#1C1B1A" stroke-width="2" filter="url(#sd)"/>
+  <text x="166" y="222" font-family="IBM Plex Mono,monospace" font-size="48" font-weight="700" fill="#F4CA00" text-anchor="middle">01</text>
+  <text x="166" y="254" font-family="Montserrat,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">ANALYSE</text>
+  <line x1="116" y1="266" x2="216" y2="266" stroke="#F4CA00" stroke-width="2"/>
+  <text x="166" y="290" font-family="Poppins,sans-serif" font-size="12" fill="#D6E4F5" text-anchor="middle"><tspan x="166" dy="0">Prozesse verstehen,</tspan><tspan x="166" dy="18">Daten sichten,</tspan><tspan x="166" dy="18">Potenziale identifizieren</tspan></text>
+  <text x="166" y="370" font-family="IBM Plex Mono,monospace" font-size="10" fill="#7BA3E0" text-anchor="middle">~1 Woche</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="292" y1="287" x2="326" y2="287" stroke="#1C1B1A" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- Step 2: STRATEGIE -->
+  <rect x="334" y="172" width="236" height="230" fill="#FFFFFF" stroke="#1C1B1A" stroke-width="2" filter="url(#sd)"/>
+  <text x="452" y="222" font-family="IBM Plex Mono,monospace" font-size="48" font-weight="700" fill="#00369E" text-anchor="middle">02</text>
+  <text x="452" y="254" font-family="Montserrat,sans-serif" font-size="15" font-weight="700" fill="#1C1B1A" text-anchor="middle" letter-spacing="3">STRATEGIE</text>
+  <line x1="402" y1="266" x2="502" y2="266" stroke="#00369E" stroke-width="2"/>
+  <text x="452" y="290" font-family="Poppins,sans-serif" font-size="12" fill="#5D5C5B" text-anchor="middle"><tspan x="452" dy="0">Roadmap erstellen,</tspan><tspan x="452" dy="18">Use Cases priorisieren,</tspan><tspan x="452" dy="18">Quick Wins definieren</tspan></text>
+  <text x="452" y="370" font-family="IBM Plex Mono,monospace" font-size="10" fill="#9E9D9D" text-anchor="middle">~1-2 Wochen</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="578" y1="287" x2="612" y2="287" stroke="#1C1B1A" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- Step 3: UMSETZUNG -->
+  <rect x="620" y="172" width="236" height="230" fill="#FFFFFF" stroke="#1C1B1A" stroke-width="2" filter="url(#sd)"/>
+  <text x="738" y="222" font-family="IBM Plex Mono,monospace" font-size="48" font-weight="700" fill="#00369E" text-anchor="middle">03</text>
+  <text x="738" y="254" font-family="Montserrat,sans-serif" font-size="15" font-weight="700" fill="#1C1B1A" text-anchor="middle" letter-spacing="3">UMSETZUNG</text>
+  <line x1="688" y1="266" x2="788" y2="266" stroke="#00369E" stroke-width="2"/>
+  <text x="738" y="290" font-family="Poppins,sans-serif" font-size="12" fill="#5D5C5B" text-anchor="middle"><tspan x="738" dy="0">KI-Loesungen implementieren,</tspan><tspan x="738" dy="18">Agenten bauen,</tspan><tspan x="738" dy="18">Teams schulen</tspan></text>
+  <text x="738" y="370" font-family="IBM Plex Mono,monospace" font-size="10" fill="#9E9D9D" text-anchor="middle">~2-4 Wochen</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="864" y1="287" x2="898" y2="287" stroke="#1C1B1A" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- Step 4: ERGEBNIS -->
+  <rect x="906" y="172" width="236" height="230" fill="#F4CA00" stroke="#1C1B1A" stroke-width="2" filter="url(#sd)"/>
+  <text x="1024" y="222" font-family="IBM Plex Mono,monospace" font-size="48" font-weight="700" fill="#1C1B1A" text-anchor="middle">04</text>
+  <text x="1024" y="254" font-family="Montserrat,sans-serif" font-size="15" font-weight="700" fill="#1C1B1A" text-anchor="middle" letter-spacing="3">ERGEBNIS</text>
+  <line x1="974" y1="266" x2="1074" y2="266" stroke="#1C1B1A" stroke-width="2"/>
+  <text x="1024" y="290" font-family="Poppins,sans-serif" font-size="12" fill="#5D5C5B" text-anchor="middle"><tspan x="1024" dy="0">Messen, optimieren,</tspan><tspan x="1024" dy="18">skalieren. Erster ROI</tspan><tspan x="1024" dy="18">nach 3 Monaten.</tspan></text>
+  <text x="1024" y="370" font-family="IBM Plex Mono,monospace" font-size="10" fill="#5D5C5B" text-anchor="middle">fortlaufend</text>
+
+  <!-- Footer -->
+  <text x="600" y="445" font-family="IBM Plex Mono,monospace" font-size="12" fill="#5D5C5B" text-anchor="middle" letter-spacing="1">Durchschnittliche Projektdauer: 4-8 Wochen  |  Erster ROI nach 3 Monaten</text>
+  <text x="1152" y="478" font-family="IBM Plex Mono,monospace" font-size="11" fill="#9E9D9D" text-anchor="end">tafka.de</text>
+</svg>
